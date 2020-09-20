@@ -1,0 +1,31 @@
+$base-font-family: 'Source Sans Pro', sans-serif;;
+$base-heading-font: inherit;
+$base-font-size: 16px;
+
+// Colors
+$black: #000;
+$white: #fff;
+$gray: #6f6f6f;
+$light-gray: #f5f5f5;
+$yellow: #afaf89;
+
+$text-color: $black;
+$text-color-light: #949494;
+$border-color: #dadada;
+
+// Paddings
+$base-padding: 25px;
+$base-padding-mobile: 15px;
+$product-gutter-padding: 10px;
+
+// Box shadows
+$pretty-boxshadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+// Sizes
+$site-max-width: 1340px;
+
+$breakpoints: (
+  'mobile':  ( max-width:  668px ),
+  'tablet':  ( max-width:  768px ),
+  'tabletlandscape':  ( max-width:  1024px )
+) !default;

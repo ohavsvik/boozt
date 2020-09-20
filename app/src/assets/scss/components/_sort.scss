@@ -1,0 +1,40 @@
+.sort-wrapper {
+	padding-bottom: 15px;
+
+	@include flexbox;
+	@include justify-content(flex-end);
+}
+
+.sort {
+	position: relative;
+
+	&__icon {
+		position: absolute;
+		right: 18px;
+		top: 50%;
+		@include translate(0, -50%);
+		font-size: 16px;
+	}
+
+	&__select {
+		background: $white;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border-radius: 0;
+		margin: 0;
+		display: block;
+		width: 100%;
+		padding: 10px 55px 10px 18px;
+		line-height: 1.4em;
+		font-size: 16px;
+		position: relative;
+
+		@include transition(0.2s all);
+		border: 1px solid $border-color;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

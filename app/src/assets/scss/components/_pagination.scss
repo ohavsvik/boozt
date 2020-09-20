@@ -1,0 +1,70 @@
+.pagination-container {
+	@include flexbox;
+	@include justify-content(center);
+
+	margin-top: 35px;
+	margin-bottom: 80px;
+}
+
+.pagination {
+	@include flexbox;
+	@include justify-content(center);
+
+	@include media('mobile') {
+		@include justify-content(space-between);
+		width: 100%;
+	}
+
+	li {
+
+		@include media('mobile') {
+			display: none;
+		}
+
+		a {
+			font-size: 18px;
+			padding: 8px 12px;
+			@include transition(background-color .2s);
+
+
+			&:hover {
+				cursor: pointer;
+
+				background-color: $light-gray;
+			}
+
+			@include media('mobile') {
+				background-color: $white !important;
+			}
+		}
+
+		&.disabled {
+			a {
+				color: $text-color-light;
+				pointer-events: none;
+			}
+		}
+		&.active {
+			a {
+				font-weight: bold;
+				pointer-events: none;
+			}
+		}
+
+		&.active,
+		&.next,
+		&.previous {
+			// Never hide these
+			display: block !important;
+		}
+
+		&.next,
+		&.previous {
+			a {
+				@include media('mobile') {
+					border: 1px solid $border-color;
+				}
+			}
+		}
+	}
+}

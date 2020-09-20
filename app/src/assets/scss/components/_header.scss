@@ -1,0 +1,44 @@
+.header {
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 25px;
+	padding: 15px 0;
+
+
+	&__content {
+		@include flexbox;
+		@include justify-content(space-between);
+		@include align-items(center);
+	}
+
+	&__logo-wrapper {
+		width: 180px;
+		height: 37px;
+
+		@include media('mobile') {
+			width: 130px;
+			height: 28px;
+		}
+
+		svg {
+			width: 180px;
+			height: 37px;
+
+			@include media('mobile') {
+				width: 130px;
+				height: 28px;
+			}
+		}
+	}
+
+	&__author {
+		font-weight: bold;
+		font-style: italic;
+		font-size: 22px;
+		color: $text-color-light;
+		white-space: nowrap;
+
+		@include media('mobile') {
+			font-size: 18px;
+		}
+	}
+}
