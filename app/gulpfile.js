@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css')
 var sourcemaps = require('gulp-sourcemaps');
 var babelify = require('babelify');
+var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 var autoprefix = require("gulp-autoprefixer");
@@ -89,6 +90,7 @@ gulp.task('js-prod', function() {
 		.pipe(gulp.dest(paths.js.dest))
 		.pipe(rename('app.min.js'))
 		.pipe(streamify(concat('app.min.js')))
+		.pipe(streamify(uglify()))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.js.dest));
 });
