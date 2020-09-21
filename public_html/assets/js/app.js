@@ -46196,7 +46196,7 @@ var ProductList = /*#__PURE__*/function (_Component) {
         }
       }), /*#__PURE__*/_react.default.createElement("div", {
         className: "product-list-wrapper"
-      }, /*#__PURE__*/_react.default.createElement("div", {
+      }, !this.state.isLoading && /*#__PURE__*/_react.default.createElement("div", {
         className: "product-list"
       }, listItems, /*#__PURE__*/_react.default.createElement("div", {
         className: "product-card product-card--empty"

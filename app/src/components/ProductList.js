@@ -130,14 +130,16 @@ class ProductList extends Component {
 						/>
 
 						<div className="product-list-wrapper">
-							<div className="product-list">
-								{listItems}
+							{!this.state.isLoading &&
+								<div className="product-list">
+									{listItems}
 
-								{/* Empty cards to pad last row */}
-								<div className="product-card product-card--empty"></div>
-								<div className="product-card product-card--empty"></div>
-								<div className="product-card product-card--empty"></div>
-							</div>
+									{/* Empty cards to pad last row */}
+									<div className="product-card product-card--empty"></div>
+									<div className="product-card product-card--empty"></div>
+									<div className="product-card product-card--empty"></div>
+								</div>
+							}
 
 							{this.state.isLoading &&
 								<div className="product-list__loading">
