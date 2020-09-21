@@ -16,7 +16,6 @@
 	}
 
 	li {
-
 		@include media('mobile') {
 			display: none;
 		}

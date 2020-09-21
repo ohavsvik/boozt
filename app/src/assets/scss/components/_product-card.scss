@@ -25,6 +25,7 @@
 		.product-card__info {
 			background-color: darken($light-gray, 5%);
 		}
+
 		.product-card__image {
 			@include scale(1.02);
 		}

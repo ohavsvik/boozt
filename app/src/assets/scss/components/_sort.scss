@@ -1,8 +1,8 @@
 .sort-wrapper {
-	padding-bottom: 15px;
-
 	@include flexbox;
 	@include justify-content(flex-end);
+
+	padding-bottom: 15px;
 }
 
 .sort {
