@@ -7,7 +7,7 @@
 
 		<title>Boozt | Oskar Havsvik</title>
 
-		<meta name="description" content="">
+		<meta name="description" content="Boozt frontend test by Oskar Havsvik.">
 
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/a4c28bfea2.js" crossorigin="anonymous"></script>

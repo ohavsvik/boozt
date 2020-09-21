@@ -45929,7 +45929,7 @@ var _booztlogo = _interopRequireDefault(require("./booztlogo"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Header() {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("header", {
     className: "header"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "site-wide"
@@ -46184,7 +46184,7 @@ var ProductList = /*#__PURE__*/function (_Component) {
           image: product.filename
         });
       });
-      return /*#__PURE__*/_react.default.createElement("div", {
+      return /*#__PURE__*/_react.default.createElement("main", {
         className: "site-wide"
       }, !this.state.error && /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactScroll.Element, {
         id: "productListTop"

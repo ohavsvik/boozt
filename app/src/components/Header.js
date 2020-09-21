@@ -3,7 +3,7 @@ import BooztLogo from './booztlogo';
 
 function Header() {
 	return (
-		<div className="header">
+		<header className="header">
 			<div className="site-wide">
 				<div className="header__content">
 					<div className="header__logo-wrapper">
@@ -15,7 +15,7 @@ function Header() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</header>
 	);
 }
 

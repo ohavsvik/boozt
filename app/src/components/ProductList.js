@@ -118,7 +118,7 @@ class ProductList extends Component {
 		);
 
 		return (
-			<div className="site-wide">
+			<main className="site-wide">
 				{!this.state.error &&
 					<div>
 						<Element id="productListTop"></Element>
@@ -158,7 +158,7 @@ class ProductList extends Component {
 				{this.state.error &&
 					<p className="page-error">Something went wrong, please contact the <a href="mailto:ohavsvik@gmail.com">culprit</a>.</p>
 				}
-			</div>
+			</main>
 		);
 	}
 }

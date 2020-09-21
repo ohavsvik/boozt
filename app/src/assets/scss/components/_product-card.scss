@@ -90,7 +90,7 @@
 	&__price {
 		display: block;
 		color: $yellow;
-		font-weight: 600;
+		font-weight: bold;
 
 		@include media('mobile') {
 			font-size: 18px;
