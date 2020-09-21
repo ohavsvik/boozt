@@ -15,3 +15,11 @@
 3. Install gulp `npm install gulp --global`
 4. Run `npm start`
 5. Profit!
+
+
+### My specs
+
+- PHP: 7.0.22
+- MySQL: 5.6.35
+- Node: 8.9.4
+- NPM: 6.1.0
